@@ -77,6 +77,7 @@ function main
     %%%%%%%%%%%%%%%%
     
     try % to see if ppfem is working
+        addpath('ppfem/lib/');
         ppfem_construct([0 1], 0, 'L');
     catch
         msg = [];
